@@ -1,0 +1,46 @@
+#footer {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+
+  #links {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+
+
+    a {
+      color: var(--gray-300);
+      font-size: 20px;
+    }
+
+    @media only screen and (max-width: 565px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 8px;
+
+      a {
+        font-size: 16px;
+      }
+    }
+
+  }
+
+  #social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    .social {
+      border: 1px solid var(--primary);
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+
+  }
+
+}

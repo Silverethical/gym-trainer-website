@@ -1,9 +1,9 @@
 function App() {
-	return (
-		<>
-			<h1>Fateme Heidari</h1>
-		</>
-	);
+  return (
+    <main className="container">
+      <h1>Fateme Heidari</h1>
+    </main>
+  );
 }
 
 export default App;

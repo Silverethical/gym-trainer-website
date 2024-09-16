@@ -1,8 +1,21 @@
 @import "./scss/css-reset.scss";
 @import "./scss/colors.scss";
+@import "./scss/fonts.scss";
 
 body {
   background-color: #FEFEFE;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "iranyekan";
+}
+
+* {
+  font-family: "IRANSansX";
 }
 
 .container {

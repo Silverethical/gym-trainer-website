@@ -22,7 +22,11 @@ header {
       justify-content: space-between;
     }
 
-
+    #logo {
+      img {
+        vertical-align: bottom;
+      }
+    }
   }
 
   #desktop-links {

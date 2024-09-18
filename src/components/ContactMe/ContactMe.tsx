@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 
 const ContactMe = () => {
   return (
-    <section id="contactMe">
+    <section id="contact-me">
       <h2 className="title">راه های ارتباطی</h2>
       <div id="socials">
         {socials.map((social, idx) => (

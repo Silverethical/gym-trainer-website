@@ -1,5 +1,6 @@
 import Footer from "./components/footer/Footer";
 import Button from "./components/Button/Button";
+import FAQs from "./components/FAQs/FAQs";
 
 function App() {
 	return (
@@ -8,11 +9,13 @@ function App() {
 				<Footer />
 				<Button size="medium" variant="filled" />
 				<Button
+				href="#"
 					startIcon="../public/images/socials/phone.svg"
 					buttonId="test"
 					size="medium"
 					variant="outlined"
 				/>
+				<FAQs/>
 			</main>
 		</>
 	);

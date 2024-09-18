@@ -7,6 +7,11 @@ body {
   direction: rtl;
 }
 
+main {
+  display: grid;
+  gap: 64px;
+}
+
 h1,
 h2,
 h3,
@@ -16,7 +21,7 @@ h5 {
 }
 
 * {
-  font-family: "IRANSansX";
+  font-family: "IRANSansX" !important;
 }
 
 .container {

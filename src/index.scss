@@ -34,9 +34,11 @@ h5 {
   font-size: 36px;
   text-align: center;
   font-weight: 900;
+  margin-bottom: 36px;
 
   @media screen and (max-width: 900px) {
-    font-size: 32px
+    font-size: 32px;
+    margin-bottom: 24px;
   }
 
   @media screen and (max-width: 500px) {

@@ -1,4 +1,5 @@
 import "./footer.scss";
+import { socials } from "../../data/socials";
 
 const Footer = () => {
   type footerLinkType = { text: string; link: string };
@@ -11,18 +12,6 @@ const Footer = () => {
     { text: "درباره من", link: "#about-me" },
   ];
 
-  const socials: { iconUrl: string; link: string }[] = [
-    {
-      iconUrl: "../../../images/socials/instagram.svg",
-      link: "https://www.instagram.com/",
-    },
-
-    {
-      iconUrl: "../../../images/socials/telegram.svg",
-      link: "https://t.me/",
-    },
-    { iconUrl: "../../../images/socials/phone.svg", link: "tel:" },
-  ];
   return (
     <footer id="footer">
       <div id="links">

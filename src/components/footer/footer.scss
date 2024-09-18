@@ -3,6 +3,8 @@
   flex-direction: column;
   gap: 36px;
 
+  padding: 48px 0;
+
 
   #links {
     display: flex;
@@ -15,7 +17,7 @@
       font-size: 20px;
     }
 
-    @media only screen and (max-width: 565px) {
+    @media only screen and (max-width: 640px) {
       flex-direction: column-reverse;
       align-items: center;
       gap: 20px;

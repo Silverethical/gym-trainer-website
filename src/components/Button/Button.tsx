@@ -16,13 +16,13 @@ const Button = ({
 	endIcon,
 	variant = "filled",
 	size = "medium",
-	buttonClass,
+	buttonClass="",
 	buttonId,
 }: ButtonComponent) => {
-	const buttonClassName = `${buttonClass && buttonClass} button-component button-${variant}`;
+	const buttonClassName = `${buttonClass ?? buttonClass} button-component button-${variant}`;
 
 	return (
-		<div
+		<button
 			id={buttonId && buttonId}
 			data-size={size}
 			className={buttonClassName}
@@ -30,7 +30,7 @@ const Button = ({
 			{startIcon && <img className="button-icon" src={startIcon} />}
 			<span>{buttonText}</span>
 			{endIcon && <img className="button-icon" src={endIcon} />}
-		</div>
+		</button>
 	);
 };
 

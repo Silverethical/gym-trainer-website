@@ -12,15 +12,16 @@ const Footer = () => {
   ];
 
   const socials: { iconUrl: string; link: string }[] = [
-    { iconUrl: "../../../images/socials/phone.svg", link: "tel:" },
-    {
-      iconUrl: "../../../images/socials/telegram.svg",
-      link: "https://t.me/",
-    },
     {
       iconUrl: "../../../images/socials/instagram.svg",
       link: "https://www.instagram.com/",
     },
+
+    {
+      iconUrl: "../../../images/socials/telegram.svg",
+      link: "https://t.me/",
+    },
+    { iconUrl: "../../../images/socials/phone.svg", link: "tel:" },
   ];
   return (
     <footer id="footer">

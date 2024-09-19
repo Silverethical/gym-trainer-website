@@ -26,7 +26,7 @@ const Button = ({
     } button-component button-${variant}`;
 
     return (
-        <a href={href ?? href}>
+        <a href={href ?? href} className={buttonClass}>
             <button
                 id={buttonId && buttonId}
                 data-size={size}

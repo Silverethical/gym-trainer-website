@@ -5,10 +5,10 @@ const Footer = () => {
   type footerLinkType = { text: string; link: string };
 
   const footerLinks: footerLinkType[] = [
-    { text: "سوالات متداول", link: "" },
-    { text: "نظرات کاربران", link: "" },
+    { text: "سوالات متداول", link: "#FAQ" },
+    { text: "نظرات کاربران", link: "#student-review" },
     { text: "ارتباط با من", link: "#contact-me" },
-    { text: "خدمات", link: "" },
+    { text: "خدمات", link: "#services" },
     { text: "درباره من", link: "#about-me" },
   ];
 

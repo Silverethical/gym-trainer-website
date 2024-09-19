@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import AboutMe from "./components/AboutMe/AboutMe";
 import StudentReviews from "./components/StudentReviews/StudentReviews";
 import HeroSection from "./components/HeroSection/HeroSection";
+import Services from "./components/Services/Services";
 
 function App() {
   return (
@@ -12,11 +13,12 @@ function App() {
       <Header />
 
       <main className="container">
-        <HeroSection/>
-		<ContactMe />
-		<AboutMe/>
-		<FAQs />
-		<StudentReviews/>
+        <HeroSection />
+        <Services />
+        <ContactMe />
+        <AboutMe />
+        <FAQs />
+        <StudentReviews />
         <Footer />
       </main>
     </>

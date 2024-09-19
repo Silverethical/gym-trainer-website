@@ -1,11 +1,16 @@
 :root {
-	/* gray */
-	--gray-300: #3f3f3f;
-	--gray-200: #606060;
-	--gray-100: #F0F0F0;
+  /* gray */
+  --gray-300: #3f3f3f;
+  --gray-200: #606060;
+  --gray-100: #F0F0F0;
 
-	/* primary */
-	--primary: #ffb61a;
-	--filled-hover: #f6a700;
-	--outlined-hover: #fff6e2;
+  /* primary */
+  --primary: #ffb61a;
+  --secondary: #FFC344;
+  --filled-hover: #f6a700;
+  --outlined-hover: #fff6e2;
+
+  /* red */
+  --red-500: #DF1B3F;
+  --red-600: #C71234;
 }

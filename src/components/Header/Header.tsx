@@ -63,7 +63,7 @@ const Header = () => {
 
           <div id="mobile-links">
             {mobileHeaderLinks.map((link, idx) => (
-              <div className="link-wrapper">
+              <div className="link-wrapper" key={idx}>
                 <img src={link.iconUrl} />
                 <a
                   onClick={() => setShowMenuStatus(!showMenu)}

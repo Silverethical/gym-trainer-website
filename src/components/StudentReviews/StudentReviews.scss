@@ -1,13 +1,14 @@
 #student-review {
-	margin-bottom: 300px;
+	margin-block: 200px;
+
+	@media only screen and (max-width: 900px) {
+		margin-block: 80px;
+	}
 
 	width: 100vw;
 	margin-left: calc((-100vw + 100%) / 2);
 	margin-right: calc((-100vw + 100%) / 2);
 
-	@media only screen and (max-width: 900px) {
-		margin-bottom: 80px;
-	}
 
 	.student-reviews-wrapper {
 		display: flex;

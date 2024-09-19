@@ -1,0 +1,30 @@
+#student-review {
+	margin-bottom: 300px;
+
+	width: 100vw;
+	margin-left: calc((-100vw + 100%) / 2);
+	margin-right: calc((-100vw + 100%) / 2);
+
+	@media only screen and (max-width: 900px) {
+		margin-bottom: 80px;
+	}
+
+	.student-reviews-wrapper {
+		display: flex;
+		flex-direction: row;
+		gap: 12px;
+		height: 200px;
+
+		overflow-x: auto;
+
+		& > div:first-child {
+			padding-right: 8%;
+		}
+
+		&[data-is-scrolled="true"] {
+			& > div:first-child {
+				padding-right: 0;
+			}
+		}
+	}
+}

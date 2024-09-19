@@ -3,6 +3,7 @@ import FAQs from "./components/FAQs/FAQs";
 import ContactMe from "./components/ContactMe/ContactMe";
 import Header from "./components/Header/Header";
 import AboutMe from "./components/AboutMe/AboutMe";
+import StudentReviews from "./components/StudentReviews/StudentReviews";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <main className="container">
 		<ContactMe />
 		<AboutMe/>
-        <FAQs />
+		<FAQs />
+		<StudentReviews/>
         <Footer />
       </main>
     </>

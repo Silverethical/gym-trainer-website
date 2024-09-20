@@ -28,7 +28,11 @@ const ServiceCard = ({
             <div className="info-description">
               <div
                 className="price"
-                data-type={detail.discountPrice ? "discount" : "normal"}
+                data-type={
+                  detail.discountPrice && type === "special-discount"
+                    ? "discount"
+                    : "normal"
+                }
               >
                 {detail.price}
               </div>

@@ -49,5 +49,18 @@ export const services: ServiceType[] = [
     ],
     imageUrl: "../../../public/images/services/sampleServicePic.png",
   },
+  {
+    serviceTitle: "خدمت",
+    type: "normal",
+    info: [
+      { title: "2 روز در هفته", price: "600 هزار تومان" },
+      { title: "2 روز در هفته", price: "600 هزار تومان" },
+      { title: "2 روز در هفته", price: "600 هزار تومان" },
+      {
+        title: "2 روز در هفته",
+        price: "600 هزار تومان",
+      },
+    ],
+    imageUrl: "../../../public/images/services/sampleServicePic.png",
+  },
 ];
-

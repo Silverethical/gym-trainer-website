@@ -1,8 +1,4 @@
-#services-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
+@import "./swiper.scss";
 
 .service-card {
   position: relative;
@@ -11,10 +7,10 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 6px 16px 0px #C7C7C7;
-  width: 100%;
-  height: fit-content;
+  box-shadow: 0px 2px 10px 0px #C7C7C78C;
   gap: 16px;
+
+
 
   &[data-type="special-offer"] {
     background-color: var(--secondary);

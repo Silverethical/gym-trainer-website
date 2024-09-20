@@ -91,11 +91,6 @@
         max-width: 460px;
         position: relative;
 
-        @media only screen and (max-width: 500px) {
-          max-width: 310;
-        }
-
-        @media only screen and (max-width: 900px) {}
       }
 
       #hero-section-image-shadow {
@@ -103,6 +98,17 @@
         z-index: 1;
         right: -20px;
         bottom: -5px;
+
+      }
+
+      #hero-section-image,
+      #hero-section-image-shadow {
+        @media only screen and (max-width: 500px) {
+          max-width: 310px;
+        }
+
+        @media only screen and (max-width: 900px) {}
+
       }
     }
   }

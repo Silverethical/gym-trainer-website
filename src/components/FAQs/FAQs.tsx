@@ -15,10 +15,7 @@ const FAQs = () => {
 					/>
 				))}
 			</div>
-			<img
-				id="FAQ-arrow"
-				src="../../../public/images/general/faq-arrow.png"
-			/>
+
 		</section>
 	);
 };

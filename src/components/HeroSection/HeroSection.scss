@@ -1,18 +1,21 @@
 #hero-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-top: 10px;
     background-image: url("/public/images/general/hero-section-img.png");
     background-repeat: no-repeat;
     background-size: cover;
 
-    @media only screen and (max-width: 900px) {
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        gap: 50px;
+    #hero-section-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 10px;
+
+        @media only screen and (max-width: 900px) {
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
     }
 
     #hero-section-right-side {
@@ -128,6 +131,7 @@
 }
 
 .infintie-scroll {
+    margin-top: 50px;
     width: 100vw;
     margin-left: calc((-100vw + 100%) / 2);
     margin-right: calc((-100vw + 100%) / 2);

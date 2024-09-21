@@ -8,21 +8,21 @@ import HeroSection from "./components/HeroSection/HeroSection";
 import Services from "./components/Services/Services";
 
 function App() {
-  return (
-    <>
-      <Header />
+    return (
+        <>
+            <Header />
 
-      <main className="container">
-        <HeroSection />
-        <Services />
-        <ContactMe />
-        <AboutMe />
-        <FAQs />
-        <StudentReviews />
-        <Footer />
-      </main>
-    </>
-  );
+            <HeroSection />
+            <main className="container">
+                <Services />
+                <ContactMe />
+                <AboutMe />
+                <FAQs />
+                <StudentReviews />
+                <Footer />
+            </main>
+        </>
+    );
 }
 
 export default App;

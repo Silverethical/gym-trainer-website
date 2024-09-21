@@ -1,115 +1,116 @@
 #hero-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-top: 10px;
-  font-family: 'Mj_Beirut';
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-top: 10px;
+	font-family: "Mj_Beirut" !important;
+	background-image: url("/public/images/general/hero-section-img.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 
-  @media only screen and (max-width: 900px) {
-    flex-direction: column;
-  }
+	@media only screen and (max-width: 900px) {
+		flex-direction: column;
+	}
 
-  #hero-section-right-side {
-    padding-bottom: 150px;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
+	#hero-section-right-side {
+		padding-bottom: 150px;
+		display: flex;
+		flex-direction: column;
+		gap: 80px;
 
-    #hero-section-text-wrapper {
-      display: flex;
-      flex-direction: row;
-      gap: 8px;
+		#hero-section-text-wrapper {
+			display: flex;
+			flex-direction: row;
+			gap: 8px;
 
-      .hero-section-text-wrapper-right {
-        display: flex;
-        flex-direction: column;
-        text-align: justify;
+			.hero-section-text-wrapper-right {
+				display: flex;
+				flex-direction: column;
+				text-align: justify;
 
-        font-family: Mj_Beirut Hd;
-        font-size: 64px;
-        font-weight: 400;
-        line-height: 64.01px;
-        text-align: right;
+				font-family: Mj_Beirut Hd;
+				font-size: 64px;
+				font-weight: 400;
+				line-height: 64.01px;
+				text-align: right;
 
-        @media only screen and (max-width: 900px) {
-          font-size: 40px;
-        }
+				@media only screen and (max-width: 900px) {
+					font-size: 40px;
+				}
 
-        @media only screen and (max-width: 500px) {
-          font-size: 24px;
-        }
-      }
+				@media only screen and (max-width: 500px) {
+					font-size: 24px;
+				}
+			}
 
-      .hero-section-text-wrapper-left {
-        font-family: Mj_Beirut Hd;
-        font-size: 128px;
-        font-weight: 400;
-        line-height: 128.01px;
-        text-align: right;
+			.hero-section-text-wrapper-left {
+				font-family: Mj_Beirut Hd;
+				font-size: 128px;
+				font-weight: 400;
+				line-height: 128.01px;
+				text-align: right;
 
-        @media only screen and (max-width: 900px) {
-          font-size: 96px;
-        }
+				@media only screen and (max-width: 900px) {
+					font-size: 96px;
+				}
 
-        @media only screen and (max-width: 500px) {
-          font-size: 64px;
-        }
-      }
+				@media only screen and (max-width: 500px) {
+					font-size: 64px;
+				}
+			}
 
-      .hero-section-text-primary {
-        color: var(--primary);
-      }
+			.hero-section-text-primary {
+				color: var(--primary);
+			}
 
-      .hero-section-text-secondary {
-        color: #606060;
-      }
-    }
+			.hero-section-text-secondary {
+				color: #606060;
+			}
+		}
 
-    #hero-section-button-wrapper {
-      display: flex;
-      flex-direction: row;
-      gap: 8px;
+		#hero-section-button-wrapper {
+			display: flex;
+			flex-direction: row;
+			gap: 8px;
 
-      @media only screen and (max-width: 900px) {
-        display: none;
-      }
+			@media only screen and (max-width: 900px) {
+				display: none;
+			}
 
-      .hero-section-buttons {
-        max-width: 230px;
-        width: 100%;
-      }
-    }
-  }
+			.hero-section-buttons {
+				max-width: 230px;
+				width: 100%;
+			}
+		}
+	}
 
-  #hero-section-left-side {
-    #hero-section-image-wrapper {
-      position: relative;
+	#hero-section-left-side {
+		#hero-section-image-wrapper {
+			position: relative;
 
-      #hero-section-image {
-        z-index: 2;
-        max-width: 460px;
-        position: relative;
+			#hero-section-image {
+				z-index: 2;
+				max-width: 460px;
+				position: relative;
+			}
 
-      }
+			#hero-section-image-shadow {
+				position: absolute;
+				z-index: 1;
+				right: -20px;
+				bottom: -5px;
+			}
 
-      #hero-section-image-shadow {
-        position: absolute;
-        z-index: 1;
-        right: -20px;
-        bottom: -5px;
+			#hero-section-image,
+			#hero-section-image-shadow {
+				@media only screen and (max-width: 500px) {
+					max-width: 310px;
+				}
 
-      }
-
-      #hero-section-image,
-      #hero-section-image-shadow {
-        @media only screen and (max-width: 500px) {
-          max-width: 310px;
-        }
-
-        @media only screen and (max-width: 900px) {}
-
-      }
-    }
-  }
+				@media only screen and (max-width: 900px) {
+				}
+			}
+		}
+	}
 }

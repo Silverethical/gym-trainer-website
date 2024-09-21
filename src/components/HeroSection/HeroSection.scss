@@ -4,13 +4,15 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 10px;
-    font-family: "Mj_Beirut" !important;
     background-image: url("/public/images/general/hero-section-img.png");
     background-repeat: no-repeat;
     background-size: cover;
 
     @media only screen and (max-width: 900px) {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
     }
 
     #hero-section-right-side {
@@ -18,6 +20,7 @@
         display: flex;
         flex-direction: column;
         gap: 80px;
+        font-family: beirut;
 
         #hero-section-text-wrapper {
             display: flex;
@@ -29,7 +32,6 @@
                 flex-direction: column;
                 text-align: justify;
 
-                font-family: Mj_Beirut Hd;
                 font-size: 64px;
                 font-weight: 400;
                 line-height: 64.01px;
@@ -45,7 +47,6 @@
             }
 
             .hero-section-text-wrapper-left {
-                font-family: Mj_Beirut Hd;
                 font-size: 128px;
                 font-weight: 400;
                 line-height: 128.01px;
@@ -114,10 +115,11 @@
             #hero-section-image,
             #hero-section-image-shadow {
                 @media only screen and (max-width: 500px) {
-                    max-width: 310px;
+                    max-width: 270px;
                 }
 
                 @media only screen and (max-width: 900px) {
+                    max-width: 310px;
                 }
             }
         }

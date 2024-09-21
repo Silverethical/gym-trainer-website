@@ -13,10 +13,10 @@ const HeroSection = () => {
                     <div id="hero-section-text-wrapper">
                         <div className="hero-section-text-wrapper-right">
                             <span className="hero-section-text-primary">
-                                آنچه می خواهی
+                                آنچه میخواهــی
                             </span>
                             <span className="hero-section-text-secondary">
-                                در آیینه ببینی
+                                در آیینه ببیـــنی
                             </span>
                         </div>
                         <div className="hero-section-text-primary hero-section-text-wrapper-left">

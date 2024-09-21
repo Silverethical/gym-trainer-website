@@ -16,7 +16,10 @@
     }
 
     #hero-section-right-side {
-        padding-bottom: 150px;
+        @media only screen and (min-width: 900px) {
+            padding-bottom: 150px;
+        }
+
         display: flex;
         flex-direction: column;
         gap: 80px;
@@ -34,10 +37,9 @@
 
                 font-size: 64px;
                 font-weight: 400;
-                line-height: 64.01px;
                 text-align: right;
 
-                @media only screen and (max-width: 900px) {
+                @media only screen and (max-width: 1150px) {
                     font-size: 40px;
                 }
 
@@ -49,10 +51,9 @@
             .hero-section-text-wrapper-left {
                 font-size: 128px;
                 font-weight: 400;
-                line-height: 128.01px;
                 text-align: right;
 
-                @media only screen and (max-width: 900px) {
+                @media only screen and (max-width: 1150px) {
                     font-size: 96px;
                 }
 
@@ -118,7 +119,7 @@
                     max-width: 270px;
                 }
 
-                @media only screen and (max-width: 900px) {
+                @media only screen and (max-width: 960px) {
                     max-width: 310px;
                 }
             }

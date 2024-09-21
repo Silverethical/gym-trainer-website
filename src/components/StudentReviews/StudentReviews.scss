@@ -1,31 +1,30 @@
 #student-review {
-	margin-block: 200px;
+    margin-block: 200px;
 
-	@media only screen and (max-width: 900px) {
-		margin-block: 40px;
-	}
+    width: 100vw;
+    margin-left: calc((-100vw + 100%) / 2);
+    margin-right: calc((-100vw + 100%) / 2);
 
-	width: 100vw;
-	margin-left: calc((-100vw + 100%) / 2);
-	margin-right: calc((-100vw + 100%) / 2);
+    @media only screen and (max-width: 900px) {
+        margin-block: 40px;
+    }
 
+    .student-reviews-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        height: 200px;
 
-	.student-reviews-wrapper {
-		display: flex;
-		flex-direction: row;
-		gap: 12px;
-		height: 200px;
+        overflow-x: auto;
 
-		overflow-x: auto;
+        & > div:first-child {
+            padding-right: 8%;
+        }
 
-		& > div:first-child {
-			padding-right: 8%;
-		}
-
-		&[data-is-scrolled="true"] {
-			& > div:first-child {
-				padding-right: 0;
-			}
-		}
-	}
+        &[data-is-scrolled="true"] {
+            & > div:first-child {
+                padding-right: 0;
+            }
+        }
+    }
 }

@@ -16,7 +16,7 @@ const StudentReview = ({
 			<div className="student-review-description">
 				<span>{studentReview}</span>
 				<img
-					src="../../../public/images/general/quote.svg"
+					src="/images/general/quote.svg"
 					className="student-review-quote"
 				/>
 			</div>

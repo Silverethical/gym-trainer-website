@@ -8,8 +8,8 @@ type FAQComponent = {
     answer?: string;
 };
 
-const defaultOpenedIcon = "../../../public/images/general/minus.svg";
-const defaultClosedIcon = "../../../public/images/general/plus.svg";
+const defaultOpenedIcon = "/images/general/minus.svg";
+const defaultClosedIcon = "/images/general/plus.svg";
 
 const FAQ = ({
     openedIcon = defaultOpenedIcon,

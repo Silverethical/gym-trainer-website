@@ -42,11 +42,11 @@ const HeroSection = () => {
                     <div id="hero-section-left-side">
                         <div id="hero-section-image-wrapper">
                             <img
-                                src="../../../public/images/general/hero-section-image.png"
+                                src="/images/general/hero-section-image.png"
                                 id="hero-section-image"
                             />
                             <img
-                                src="../../../public/images/general/hero-section-image-shadow.png"
+                                src="/images/general/hero-section-image-shadow.png"
                                 id="hero-section-image-shadow"
                             />
                         </div>

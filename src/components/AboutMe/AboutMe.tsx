@@ -27,12 +27,12 @@ const AboutMe = () => {
 				<img
 					className="about-me-circle"
 					id="about-me-red-circle"
-					src="../../../public/images/general/about-me-red-square.png"
+					src="/images/general/about-me-red-square.png"
 				/>
 				<img
 					id="about-me-yellow-circle"
 					className="about-me-circle"
-					src="../../../public/images/general/about-me-yellow-square.png"
+					src="/images/general/about-me-yellow-square.png"
 				/>
 			</div>
 		</section>

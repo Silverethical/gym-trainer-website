@@ -14,27 +14,27 @@ const Header = () => {
     {
       text: "درباره من",
       link: "#about-me",
-      iconUrl: "../../../images/header/User.svg",
+      iconUrl: "/images/header/User.svg",
     },
     {
       text: "خدمات",
       link: "#services",
-      iconUrl: "../../../images/header/Barbell.svg",
+      iconUrl: "/images/header/Barbell.svg",
     },
     {
       text: "ارتباط با من",
       link: "#contact-me",
-      iconUrl: "../../../images/header/phone.svg",
+      iconUrl: "/images/header/phone.svg",
     },
     {
       text: "نظرات کاربران",
       link: "#",
-      iconUrl: "../../../images/header/ChatDots.svg",
+      iconUrl: "/images/header/ChatDots.svg",
     },
     {
       text: "سوالات متداول",
       link: "#faq-wrapper",
-      iconUrl: "../../../images/header/QuestionMark.svg",
+      iconUrl: "/images/header/QuestionMark.svg",
     },
   ];
 
@@ -44,7 +44,7 @@ const Header = () => {
     <header>
       <div className="container">
         <div id="logo">
-          <img src="../../../images/general/favicon.svg" alt="" />
+          <img src="/images/general/favicon.svg" alt="" />
         </div>
         <div id="desktop-links">
           {desktopHeaderLinks.map((link, idx) => (
@@ -54,11 +54,11 @@ const Header = () => {
           ))}
         </div>
         <div id="hamruger-menu" onClick={() => setShowMenuStatus(!showMenu)}>
-          <img src="../../../images/header/hamburger-menu.svg" />
+          <img src="/images/header/hamburger-menu.svg" />
         </div>
         <div id="mobile-menu" className={showMenu ? "show" : ""}>
           <div id="closeIcon" onClick={() => setShowMenuStatus(!showMenu)}>
-            <img src="../../../images/header/closeIcon.svg" />
+            <img src="/images/header/closeIcon.svg" />
           </div>
 
           <div id="mobile-links">

@@ -1,5 +1,5 @@
 #hero-section {
-    background-image: url("/public/images/general/hero-section-img.png");
+    background-image: url("/images/general/hero-section-img.png");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -19,9 +19,6 @@
     }
 
     #hero-section-right-side {
-        @media only screen and (min-width: 900px) {
-            padding-bottom: 150px;
-        }
 
         display: flex;
         flex-direction: column;

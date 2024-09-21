@@ -4,7 +4,7 @@ const FAQArrow = () => {
     return (
         <img
             id="FAQ-arrow"
-            src="../../../public/images/general/faq-arrow.png"
+            src="/images/general/faq-arrow.png"
         />
     );
 };

@@ -19,7 +19,7 @@ export const services: ServiceType[] = [
       },
     ],
     type: "special-discount",
-    imageUrl: "../../../public/images/services/sampleServicePic.png",
+    imageUrl: "/images/services/sampleServicePic.png",
   },
   {
     serviceTitle: "خدمت",
@@ -33,7 +33,7 @@ export const services: ServiceType[] = [
       },
     ],
     type: "special-offer",
-    imageUrl: "../../../public/images/services/sampleServicePic.png",
+    imageUrl: "/images/services/sampleServicePic.png",
   },
   {
     serviceTitle: "خدمت",
@@ -47,7 +47,7 @@ export const services: ServiceType[] = [
         price: "600 هزار تومان",
       },
     ],
-    imageUrl: "../../../public/images/services/sampleServicePic.png",
+    imageUrl: "/images/services/sampleServicePic.png",
   },
   {
     serviceTitle: "خدمت",
@@ -61,6 +61,6 @@ export const services: ServiceType[] = [
         price: "600 هزار تومان",
       },
     ],
-    imageUrl: "../../../public/images/services/sampleServicePic.png",
+    imageUrl: "/images/services/sampleServicePic.png",
   },
 ];

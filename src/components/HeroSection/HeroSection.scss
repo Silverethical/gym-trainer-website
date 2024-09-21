@@ -75,7 +75,16 @@
 			gap: 8px;
 
 			@media only screen and (max-width: 900px) {
-				display: none;
+				position: fixed;
+				background-color: white;
+				z-index: 19;
+				bottom: 0;
+				display: flex;
+				justify-content: center;
+				align-content: center;
+				right: 0;
+				left: 0;
+				padding: 10px;
 			}
 
 			.hero-section-buttons {

@@ -76,7 +76,7 @@
             flex-direction: row;
             gap: 8px;
 
-            @media only screen and (max-width: 900px) {
+            @media only screen and (max-width: 500px) {
                 position: fixed;
                 background-color: white;
                 z-index: 19;

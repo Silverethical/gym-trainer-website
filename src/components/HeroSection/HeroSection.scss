@@ -3,6 +3,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media only screen and (min-width: 500px) {
+    background-attachment: fixed;
+  }
+
   #hero-section-wrapper {
     display: flex;
     flex-direction: row;
@@ -151,7 +155,8 @@
   padding: 8px 0;
 
   .infinite-scroll-text-wrapper {
-    // overflow: scroll;
+    overflow: hidden; 
+    white-space: nowrap; 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -164,24 +169,16 @@
     color: var(--primary);
     flex: 0 0 auto;
     height: 12px;
-    white-space: nowrap;
+    animation: scroll 10s linear infinite; 
   }
 }
 
-@keyframes loop {
+@keyframes scroll {
   0% {
+    transform: translateX(500%);
+  }
+
+  100% {
     transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes loop2 {
-  0% {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-200%);
   }
 }

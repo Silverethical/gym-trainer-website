@@ -28,7 +28,7 @@ const Header = () => {
     },
     {
       text: "نظرات کاربران",
-      link: "#",
+      link: "#student-review",
       iconUrl: "/images/header/ChatDots.svg",
     },
     {

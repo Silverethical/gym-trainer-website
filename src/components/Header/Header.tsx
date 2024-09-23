@@ -12,29 +12,29 @@ const Header = () => {
 
   const mobileHeaderLinks: headerLinkType[] = [
     {
-      text: "درباره من",
-      link: "#about-me",
-      iconUrl: "/images/header/User.svg",
-    },
-    {
       text: "خدمات",
       link: "#services",
       iconUrl: "/images/header/Barbell.svg",
     },
     {
-      text: "ارتباط با من",
+      text: "راه های ارتباطی",
       link: "#contact-me",
       iconUrl: "/images/header/phone.svg",
     },
     {
-      text: "نظرات کاربران",
-      link: "#student-review",
-      iconUrl: "/images/header/ChatDots.svg",
+      text: "درباره من",
+      link: "#about-me",
+      iconUrl: "/images/header/User.svg",
     },
     {
       text: "سوالات متداول",
-      link: "#faq-wrapper",
+      link: "#FAQ",
       iconUrl: "/images/header/QuestionMark.svg",
+    },
+    {
+      text: "نظرات شاگردان",
+      link: "#student-review",
+      iconUrl: "/images/header/ChatDots.svg",
     },
   ];
 
@@ -43,9 +43,9 @@ const Header = () => {
   return (
     <header>
       <div className="container">
-        <div id="logo">
-          <img src="/images/general/favicon.svg" alt="" />
-        </div>
+        <a id="logo" href="/">
+          <img src="/images/general/favicon.svg" />
+        </a>
         <div id="desktop-links">
           {desktopHeaderLinks.map((link, idx) => (
             <a key={idx} href={link.link}>

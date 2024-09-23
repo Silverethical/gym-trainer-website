@@ -1,6 +1,11 @@
 #student-review {
   margin-block: 100px;
 
+  .swiper {
+    height: 200px;
+    padding-inline: 5%;
+  }
+
   width: 100vw;
   margin-left: calc((-100vw + 100%) / 2);
   margin-right: calc((-100vw + 100%) / 2);
@@ -13,19 +18,6 @@
     display: flex;
     flex-direction: row;
     gap: 12px;
-    height: 200px;
-    margin-inline: 20px;
-
-    overflow-x: auto;
-
-    &>div:first-child {
-      padding-right: 8%;
-    }
-
-    &[data-is-scrolled="true"] {
-      &>div:first-child {
-        padding-right: 0;
-      }
-    }
+    overflow: hidden;
   }
 }

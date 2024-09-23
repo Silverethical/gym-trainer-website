@@ -103,8 +103,11 @@
       }
 
       .hero-section-buttons {
-        max-width: 230px;
         width: 100%;
+
+        @media only screen and (min-width: 900px) {
+          max-width: 230px;
+        }
       }
     }
   }
@@ -155,8 +158,8 @@
   padding: 8px 0;
 
   .infinite-scroll-text-wrapper {
-    overflow: hidden; 
-    white-space: nowrap; 
+    overflow: hidden;
+    white-space: nowrap;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -168,8 +171,7 @@
     min-width: max-content;
     color: var(--primary);
     flex: 0 0 auto;
-    height: 12px;
-    animation: scroll 10s linear infinite; 
+    animation: scroll 10s linear infinite;
   }
 }
 

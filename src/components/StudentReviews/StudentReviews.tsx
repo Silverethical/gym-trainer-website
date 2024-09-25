@@ -4,7 +4,7 @@ import { studentReviews } from "../../data/studentReviewData";
 
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css/bundle";
 
 const StudentReviews = () => {
@@ -16,7 +16,8 @@ const StudentReviews = () => {
 				spaceBetween={12}
 				loop={true}
 				grabCursor={true}
-				modules={[Autoplay]}
+				pagination={{ clickable: true }}
+				modules={[Autoplay, Pagination]}
 				autoplay={{
 					delay: 2500,
 					pauseOnMouseEnter: true,

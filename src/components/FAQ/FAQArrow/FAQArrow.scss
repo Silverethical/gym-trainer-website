@@ -1,6 +1,6 @@
 #FAQ-arrow {
 	position: absolute;
-	bottom: 20%;
+	bottom: 17%;
 	left: 0;
 	width: 340px;
 	z-index: 1;
@@ -10,7 +10,9 @@
 		bottom: 15%;
 	}
 
-	@media only screen and (max-width: 500px) {
+	@media only screen and (max-width: 600px) {
 		width: 240px;
+    		bottom: 20%;
+
 	}
 }

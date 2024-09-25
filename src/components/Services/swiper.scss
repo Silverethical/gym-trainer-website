@@ -1,17 +1,13 @@
 // fixing swiper bug
 .swiper .swiper-wrapper {
   width: 0 !important;
-
 }
-
 
 #services-wrapper.swiper {
   padding: 5px !important;
 
   padding-bottom: 50px !important;
 }
-
-
 
 .swiper-pagination-bullet-active-prev,
 .swiper-pagination-bullet-active-next {
@@ -24,14 +20,16 @@
   transition: 0.2s;
   width: 25px !important;
   border-radius: 18px !important;
-
 }
 
-.swiper-pagination-bullet-active-main {}
-
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
 
 :root {
   --swiper-pagination-color: var(--primary);
   --swiper-pagination-bullet-inactive-color: var(--primary);
-  --swiper-pagination-bullet-inactive-opacity: 1
+  --swiper-pagination-bullet-inactive-opacity: 1;
 }

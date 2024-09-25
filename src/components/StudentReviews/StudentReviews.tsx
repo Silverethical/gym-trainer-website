@@ -4,6 +4,7 @@ import { studentReviews } from "../../data/studentReviewData";
 
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import "swiper/css/bundle";
 
 const StudentReviews = () => {
@@ -15,7 +16,12 @@ const StudentReviews = () => {
 				spaceBetween={12}
 				loop={true}
 				grabCursor={true}
-				autoplay={true}
+				modules={[Autoplay]}
+				autoplay={{
+					delay: 2500,
+					pauseOnMouseEnter: true,
+					disableOnInteraction: false,
+				}}
 				breakpoints={{
 					4000: {
 						slidesPerView: 6,
@@ -24,10 +30,10 @@ const StudentReviews = () => {
 						slidesPerView: 5,
 					},
 					1040: {
-						slidesPerView: 4,
-					},
-					720: {
 						slidesPerView: 3,
+					},
+					500: {
+						slidesPerView: 2,
 					},
 					360: {
 						slidesPerView: 2,

@@ -103,8 +103,11 @@
       }
 
       .hero-section-buttons {
-        max-width: 230px;
         width: 100%;
+
+        @media only screen and (min-width: 900px) {
+          max-width: 230px;
+        }
       }
     }
   }
@@ -142,43 +145,22 @@
 
 .infintie-scroll {
   margin-top: 50px;
-  width: 100vw;
-  margin-left: calc((-100vw + 100%) / 2);
-  margin-right: calc((-100vw + 100%) / 2);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-
   background-color: #f4efe5;
-  padding: 8px 0;
-
-  .infinite-scroll-text-wrapper {
-    overflow: hidden; 
-    white-space: nowrap; 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 18px;
-  }
+  padding: 8px 0px;
+  user-select: none;
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
 
   .loop-text {
     min-width: max-content;
     color: var(--primary);
-    flex: 0 0 auto;
-    height: 12px;
-    animation: scroll 10s linear infinite; 
-  }
-}
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 4px;
 
-@keyframes scroll {
-  0% {
-    transform: translateX(500%);
-  }
-
-  100% {
-    transform: translateX(100%);
+    @media only screen and (max-width: 500px) {
+      font-size: 24px;
+    }
   }
 }

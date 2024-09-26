@@ -1,4 +1,5 @@
 import { useState } from "react";
+import FAQArrow from "./FAQArrow/FAQArrow";
 import "./FAQ.scss";
 
 type FAQComponent = {

@@ -6,8 +6,7 @@ const ServiceCard = ({
   imageUrl,
   type = "normal",
   info,
-  showButton = true,
-  buttonLink = "#contact-me",
+  button,
 }: ServiceType) => {
   return (
     <div className="service-card" data-type={type}>
@@ -40,13 +39,13 @@ const ServiceCard = ({
             </div>
           ))}
       </div>
-      {showButton && (
+      {button?.showButton !== false && (
         <Button
           buttonClass="get-button"
-          buttonText="تهیه"
+          buttonText={button?.buttonText ? button.buttonText : "تهیه"}
           variant="filled"
           data-type={type}
-          href={buttonLink}
+          href={button?.buttonLink ? button?.buttonLink : "#contact-me"}
         />
       )}
     </div>

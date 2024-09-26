@@ -1,9 +1,4 @@
-interface ServiceType {
-  serviceTitle: string;
-  imageUrl: string;
-  type?: "normal" | "special-offer" | "special-discount";
-  info: { title: string; price: string; discountPrice?: string }[];
-}
+import { ServiceType } from "../types/serviceType";
 
 export const services: ServiceType[] = [
   {

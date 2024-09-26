@@ -3,6 +3,9 @@ export interface ServiceType {
   imageUrl: string;
   type?: "normal" | "special-offer" | "special-discount";
   info?: { title: string; price: string; discountPrice?: string }[];
-  showButton?: boolean;
-  buttonLink?: string;
+  button?: {
+    showButton?: boolean;
+    buttonLink?: string;
+    buttonText?: string;
+  };
 }

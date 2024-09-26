@@ -6,8 +6,8 @@ const Footer = () => {
 
   const footerLinks: footerLinkType[] = [
     { text: "سوالات متداول", link: "#FAQ" },
-    { text: "نظرات کاربران", link: "#student-review" },
-    { text: "ارتباط با من", link: "#contact-me" },
+    { text: "نظرات شاگردان", link: "#student-review" },
+    { text: "راه های ارتباطی", link: "#contact-me" },
     { text: "خدمات", link: "#services" },
     { text: "درباره من", link: "#about-me" },
   ];

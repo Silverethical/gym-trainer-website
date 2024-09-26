@@ -36,6 +36,8 @@ const Services = () => {
               serviceTitle={service.serviceTitle}
               imageUrl={service.imageUrl}
               type={service.type}
+              showButton={service.showButton}
+              buttonLink={service.buttonLink}
             />
           </SwiperSlide>
         ))}

@@ -1,7 +1,9 @@
 #footer {
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
+  #footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
 
   padding: 48px 0;
 
@@ -9,12 +11,10 @@
     padding: 0;
   }
 
-
   #links {
     display: flex;
     gap: 30px;
     justify-content: center;
-
 
     a {
       color: var(--gray-300);
@@ -35,7 +35,6 @@
         font-size: 16px;
       }
     }
-
   }
 
   #social-icons {
@@ -55,9 +54,6 @@
       &:hover {
         background-color: var(--outlined-hover);
       }
-
     }
-
   }
-
 }

@@ -9,8 +9,11 @@
   .swiper {
     height: 200px;
     padding-inline: 5%;
-  }
 
+    @media only screen and (max-width: 500px) {
+      height: 250px;
+    }
+  }
 
   @media only screen and (max-width: 900px) {
     margin-block: 40px;
@@ -22,5 +25,4 @@
     gap: 12px;
     overflow: hidden;
   }
-
 }

@@ -1,5 +1,5 @@
 #student-review {
-  margin-block: 100px;
+  margin-bottom: 100px;
   z-index: 3;
 
   width: 100vw;
@@ -16,7 +16,7 @@
   }
 
   @media only screen and (max-width: 900px) {
-    margin-block: 40px;
+    margin-bottom: 40px;
   }
 
   .student-reviews-wrapper {

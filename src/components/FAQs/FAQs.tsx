@@ -5,17 +5,18 @@ import FAQData from "../../data/FAQData";
 const FAQs = () => {
 	return (
 		<section id="FAQ">
-			<h2 className="title">سوالات متداول</h2>
-			<div className="FAQs-wrapper">
-				{FAQData.map((data, id) => (
-					<FAQ
-						question={data.question}
-						answer={data.answer}
-						key={id}
-					/>
-				))}
+			<div className="container">
+				<h2 className="title">سوالات متداول</h2>
+				<div className="FAQs-wrapper">
+					{FAQData.map((data, id) => (
+						<FAQ
+							question={data.question}
+							answer={data.answer}
+							key={id}
+						/>
+					))}
+				</div>
 			</div>
-
 		</section>
 	);
 };

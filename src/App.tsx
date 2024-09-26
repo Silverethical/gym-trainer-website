@@ -14,7 +14,7 @@ function App() {
             <Header />
             <FAQArrow/>
             <HeroSection />
-            <main className="container">
+            <main >
                 <Services />
                 <ContactMe />
                 <AboutMe />

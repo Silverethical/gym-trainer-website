@@ -15,19 +15,21 @@ const Footer = () => {
 	return (
 		<footer id="footer">
 			<div className="container">
-				<div id="links">
-					{footerLinks.map((link, idx) => (
-						<a key={idx} href={link.link}>
-							{link.text}
-						</a>
-					))}
-				</div>
-				<div id="social-icons">
-					{socials.map((item, idx) => (
-						<a key={idx} className="social" href={item.link}>
-							<img src={item.iconUrl} />
-						</a>
-					))}
+				<div id="footer-wrapper">
+					<div id="links">
+						{footerLinks.map((link, idx) => (
+							<a key={idx} href={link.link}>
+								{link.text}
+							</a>
+						))}
+					</div>
+					<div id="social-icons">
+						{socials.map((item, idx) => (
+							<a key={idx} className="social" href={item.link}>
+								<img src={item.iconUrl} />
+							</a>
+						))}
+					</div>
 				</div>
 			</div>
 		</footer>

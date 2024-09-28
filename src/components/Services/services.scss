@@ -1,0 +1,132 @@
+@import "./swiper.scss";
+
+#services {
+  margin-top: 80px;
+
+  @media only screen and (max-width: 500px) {
+    margin-top: 48px;
+  }
+}
+
+.service-card {
+  position: relative;
+  border-radius: 21px;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 10px 0px #c7c7c78f;
+  gap: 16px;
+
+  &[data-type="special-offer"] {
+    background-color: var(--secondary);
+
+    button.get-button {
+      background-color: #fff;
+      color: #000;
+
+      &:hover {
+        background-color: #ebeaea;
+      }
+    }
+  }
+
+  &[data-type="special-discount"] {
+    button.get-button {
+      background-color: var(--red-500);
+
+      &:hover {
+        background-color: var(--red-600);
+      }
+    }
+  }
+}
+
+.service-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 5px;
+
+  .service-info-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: dashed 0.5px #b2b2b2;
+    padding-bottom: 20px;
+    font-size: 14px;
+
+    &:last-of-type {
+      border-bottom: none;
+      padding-bottom: none;
+    }
+
+    .info-title {
+      font-weight: 400;
+    }
+
+    .info-description {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      gap: 4px;
+      position: relative;
+
+      .discount-price {
+        font-size: 14px;
+        color: var(--red-500);
+      }
+
+      .price {
+        &[data-type="discount"] {
+          text-decoration: line-through;
+          font-size: 10px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+.service-title {
+  text-align: start;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 27.64px;
+}
+
+button.get-button {
+  width: 100%;
+  font-weight: 600;
+  background-color: var(--secondary);
+
+  &:hover {
+    background-color: var(--primary);
+  }
+}
+
+.service-picture {
+  border-radius: 12px;
+  align-self: center;
+  width: 100%;
+  padding: 0 20px;
+
+  img {
+    width: 100%;
+    border-radius: inherit;
+  }
+}
+
+.special-discount-banner {
+  width: 130px;
+  height: 40px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 55px;
+  background-color: var(--red-500);
+  color: #fff;
+}

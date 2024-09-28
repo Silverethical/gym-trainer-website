@@ -1,0 +1,138 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px 10px #0000000a;
+
+  .container {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+
+    @media screen and (max-width: 900px) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+
+    #logo {
+      img {
+        vertical-align: bottom;
+      }
+    }
+  }
+
+  #desktop-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+
+    a {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+
+      color: #000;
+      transition: 0.2s;
+
+      &:hover {
+        color: var(--primary);
+      }
+
+      @media screen and (max-width: 900px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  #hamruger-menu {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 900px) {
+      img {
+        width: 34px;
+        height: 56px;
+      }
+    }
+  }
+}
+
+#mobile-menu {
+  transform: translateX(100%);
+  height: 100vh;
+  z-index: 20;
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 0 10px 10px #0000000c;
+
+  &.show {
+    transform: translateX(0%);
+  }
+
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}
+
+#closeIcon {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  img {
+    cursor: pointer;
+  }
+}
+
+#mobile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .link-wrapper {
+    border-bottom: 1px solid #dddddd;
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+
+    a {
+      width: fit-content;
+      color: #000;
+      transition: 0.2s;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+}

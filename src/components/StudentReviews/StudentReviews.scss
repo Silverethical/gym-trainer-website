@@ -1,0 +1,28 @@
+#student-review {
+  margin-bottom: 100px;
+  z-index: 3;
+
+  width: 100%;
+  margin-left: calc((-100vw + 100%) / 2);
+  margin-right: calc((-100vw + 100%) / 2);
+
+  .swiper {
+    height: 200px;
+    padding-inline: 5%;
+
+    @media only screen and (max-width: 500px) {
+      height: 250px;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    margin-bottom: 40px;
+  }
+
+  .student-reviews-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    overflow: hidden;
+  }
+}

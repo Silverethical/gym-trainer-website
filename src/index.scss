@@ -1,0 +1,60 @@
+@import "./scss/css-reset.scss";
+@import "./scss/colors.scss";
+@import "./scss/fonts.scss";
+
+body {
+  background-color: #fefefe;
+  font-family: IRANSansX;
+  direction: rtl;
+  position: relative;
+}
+
+main {
+  display: grid;
+  gap: 64px;
+
+  @media only screen and (max-width: 900px) {
+    padding-bottom: 120px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: iranyekan;
+}
+
+* {
+  scroll-behavior: smooth;
+  scroll-margin: 80px;
+}
+
+button {
+  font-family: IRANSansX;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90vw;
+}
+
+.title {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 36px;
+  color: var(--gray-300);
+  line-height: 62.18px;
+
+  @media screen and (max-width: 900px) {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,47 @@
+.button-component {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+
+	outline: none;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: 0.2s;
+	width: max-content;
+	font-size: 14px;
+
+	&[data-size="medium"] {
+		padding: 10px 30px;
+	}
+
+	&[data-size="large"] {
+		padding: 14px 24px;
+	}
+}
+
+.button-filled {
+	background: var(--primary);
+	color: white;
+
+	&:hover {
+		background: var(--filled-hover);
+	}
+}
+
+.button-outlined {
+	background: transparent;
+	border: 1px solid var(--primary);
+	color: var(--primary);
+
+	&:hover {
+		background: var(--outlined-hover);
+	}
+}
+
+.button-icon {
+	width: 25px;
+	height: 25px;
+}

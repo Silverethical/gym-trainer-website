@@ -1,0 +1,69 @@
+.about-me-wrapper {
+	border-radius: 48px;
+	background-color: #f0f0f04d;
+	padding: 30px 16px 64px 16px;
+	line-height: 28px;
+	text-align: center;
+	position: relative;
+
+	.about-me-circle {
+		position: absolute;
+		filter: blur(35px);
+	}
+
+	#about-me-yellow-circle {
+		top: 30px;
+		left: 50px;
+
+		width: 100px;
+		height: 100px;
+
+		@media only screen and (max-width: 900px) {
+			width: 80px;
+			height: 80px;
+		}
+	}
+
+	#about-me-red-circle {
+		bottom: 20px;
+		right: 20px;
+
+		width: 200px;
+		height: 200px;
+
+		@media only screen and (max-width: 900px) {
+			bottom: 30px;
+			right: 20px;
+
+			width: 150px;
+			height: 150px;
+		}
+	}
+
+	.about-me-title-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+
+		font-size: 18px;
+
+		margin-bottom: 16px;
+		color: #484848;
+		font-weight: 700;
+
+		@media only screen and (max-width: 900px) {
+			font-size: 16px;
+		}
+
+	}
+
+	.about-me-description {
+		color: #606060;
+		font-size: 16px;
+		font-weight: 400;
+
+		@media only screen and (max-width: 900px) {
+			font-size: 14px;
+		}
+	}
+}

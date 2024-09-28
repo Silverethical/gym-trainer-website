@@ -2,7 +2,7 @@
 	border-radius: 48px;
 	background-color: #f0f0f04d;
 	padding: 30px 16px 64px 16px;
-	line-height: 24px;
+	line-height: 28px;
 	text-align: center;
 	position: relative;
 
@@ -46,7 +46,6 @@
 		gap: 4px;
 
 		font-size: 18px;
-		line-height: 24px;
 
 		margin-bottom: 16px;
 		color: #484848;
@@ -54,7 +53,6 @@
 
 		@media only screen and (max-width: 900px) {
 			font-size: 16px;
-			line-height: 21px;
 		}
 
 	}
@@ -66,7 +64,6 @@
 
 		@media only screen and (max-width: 900px) {
 			font-size: 14px;
-			line-height: 21px;
 		}
 	}
 }

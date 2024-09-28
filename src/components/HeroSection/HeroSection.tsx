@@ -9,7 +9,7 @@ const loopTextArray: ReactElement[] = [];
 for (let i = 0; i < 10; i++) {
 	loopTextArray.push(
 		<SwiperSlide key={i} className="loop-text">
-			FATEME HEYDARI
+			FATEMEH HEYDARI
 		</SwiperSlide>
 	);
 }

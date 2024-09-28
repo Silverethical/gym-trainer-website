@@ -4,7 +4,7 @@ import { services } from "../../data/services";
 
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/bundle";
 
 const Services = () => {
@@ -12,10 +12,16 @@ const Services = () => {
     <section id="services">
       <h2 className="title">خدمات</h2>
       <Swiper
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         slidesPerView={3}
         pagination={{ clickable: true }}
         spaceBetween={15}
+        loop={true}
+        autoplay={{
+          delay: 4000,
+          pauseOnMouseEnter: true,
+          disableOnInteraction: false,
+        }}
         id="services-wrapper"
         breakpoints={{
           1040: {

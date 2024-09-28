@@ -9,7 +9,7 @@ const Footer = () => {
     { text: "راه های ارتباطی", link: "#contact-me" },
     { text: "درباره من", link: "#about-me" },
     { text: "سوالات متداول", link: "#FAQ" },
-    { text: "نظرات شاگردان", link: "#student-review" },
+    // { text: "نظرات شاگردان", link: "#student-review" },
   ];
 
   return (

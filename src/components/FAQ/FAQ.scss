@@ -1,6 +1,7 @@
 .faq-wrapper {
   background-color: var(--gray-100);
   border-radius: 8px;
+  line-height: 28px;
 
   .faq-question-wrapper {
     cursor: pointer;
@@ -20,17 +21,20 @@
     }
   }
 
-  .faq-answer {
-    opacity: 0;
-    height: 0;
-    color: var(--gray-200);
-    border-top: 1px solid white;
-    transition: 0.2s;
-
-    &[data-is-closed="false"] {
-      opacity: 1;
-      height: auto;
-      padding: 16px 10px;
-    }
-  }
+	.faq-answer {
+    opacity: 1;
+    height: auto;
+    padding: 16px 10px;
+		color: var(--gray-200);
+		border-top: 1px solid white;
+		transition: 0.2s;
+    position: relative;
+    
+		&[data-is-closed="true"] {
+      opacity: 0;
+			height: 0;
+      padding: 0;
+      z-index: -10;
+		}
+	}
 }

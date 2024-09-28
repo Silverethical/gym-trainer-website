@@ -15,6 +15,7 @@ const ContactMe = () => {
 							startIcon={social.iconUrl}
 							buttonText={social.text}
 							href={social.link}
+							target="_blank"
 						/>
 					))}
 				</div>

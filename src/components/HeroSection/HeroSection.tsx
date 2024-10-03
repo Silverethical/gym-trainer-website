@@ -6,7 +6,7 @@ import { Autoplay } from "swiper/modules";
 
 const loopTextArray: ReactElement[] = [];
 
-for (let i = 0; i < 15; i++) {
+for (let i = 0; i < 50; i++) {
   loopTextArray.push(
     <SwiperSlide key={i} className="loop-text">
       FATEMEH HEYDARI
@@ -64,16 +64,14 @@ const HeroSection = () => {
       </section>
       <Swiper
         className="infintie-scroll"
-        slidesPerView="auto"
+        slidesPerView={8}
         spaceBetween={18}
         loop={true}
-        speed={5000}
+        speed={4000}
         allowTouchMove={false}
-				freeMode={true}
-				centeredSlides={true}
         modules={[Autoplay]}
         autoplay={{
-          delay: 1,
+          delay: 0,
           disableOnInteraction: false,
         }}
       >

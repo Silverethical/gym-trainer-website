@@ -31,11 +31,11 @@ const Header = () => {
       link: "#FAQ",
       iconUrl: "/images/header/QuestionMark.svg",
     },
-    {
-      text: "نظرات شاگردان",
-      link: "#student-review",
-      iconUrl: "/images/header/ChatDots.svg",
-    },
+    // {
+    //   text: "نظرات شاگردان",
+    //   link: "#student-review",
+    //   iconUrl: "/images/header/ChatDots.svg",
+    // },
   ];
 
   const [showMenu, setShowMenuStatus] = useState(false);

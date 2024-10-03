@@ -66,13 +66,13 @@ const HeroSection = () => {
         className="infintie-scroll"
         slidesPerView={8}
         spaceBetween={18}
-        loop={true} // Allow continuous looping
-        speed={4000} // Increase speed for smoother, slower scroll
-        allowTouchMove={false} // Disable manual swiping
+        loop={true}
+        speed={4000}
+        allowTouchMove={false}
         modules={[Autoplay]}
         autoplay={{
-          delay: 0, // No delay for continuous scroll
-          disableOnInteraction: false, // Keep scrolling after interactions
+          delay: 0,
+          disableOnInteraction: false,
         }}
       >
         {loopTextArray}

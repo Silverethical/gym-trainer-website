@@ -14,7 +14,9 @@ const ServiceCard = ({
         <div className="special-discount-banner">تخفیف ویژه</div>
       )}
 
-      <img className="service-picture" src={imageUrl} />
+      <div className="service-picture">
+        <img src={imageUrl} />
+      </div>
       <div className="service-title">{serviceTitle}</div>
       <div className="service-info">
         {info &&

@@ -54,7 +54,11 @@ const Header = () => {
           ))}
         </div>
         <div id="hamruger-menu" onClick={() => setShowMenuStatus(!showMenu)}>
-          <img src="/images/header/hamburger-menu.svg" />
+          <div className={`icon nav-icon-5 ${showMenu && "open"}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
         <div
           id="mobile-menu-wrapper"
@@ -68,10 +72,6 @@ const Header = () => {
           }}
         >
           <div id="mobile-menu">
-            <div id="closeIcon" onClick={() => setShowMenuStatus(!showMenu)}>
-              <img src="/images/header/closeIcon.svg" />
-            </div>
-
             <div id="mobile-links">
               {mobileHeaderLinks.map((link, idx) => (
                 <div className="link-wrapper" key={idx}>

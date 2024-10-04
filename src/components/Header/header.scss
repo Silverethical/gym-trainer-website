@@ -74,21 +74,27 @@ header {
   }
 }
 
-#mobile-menu {
+#mobile-menu-wrapper {
   transform: translateX(100%);
-  height: 100vh;
   z-index: 20;
   transition: 0.5s;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-  background-color: #fff;
-  border-radius: 0 0 24px 24px;
-  box-shadow: 0 0 10px 10px #0000000c;
+
+  height: 100vh;
+
+  #mobile-menu {
+
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 0 10px 10px #0000000f;
+  }
+
 
   &.show {
     transform: translateX(0%);

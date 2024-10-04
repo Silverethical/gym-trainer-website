@@ -1,3 +1,5 @@
+@import "./hamburgerMenu.scss";
+
 header {
   position: sticky;
   top: 0;
@@ -79,7 +81,7 @@ header {
   z-index: 20;
   transition: 0.5s;
   position: absolute;
-  top: 0;
+  top: 70px;
   left: 0;
   right: 0;
 
@@ -92,7 +94,7 @@ header {
     padding: 16px;
     background-color: #fff;
     border-radius: 0 0 24px 24px;
-    box-shadow: 0 0 10px 10px #0000000f;
+    box-shadow: 0px 20px 10px 10px #0000000a;
   }
 
 

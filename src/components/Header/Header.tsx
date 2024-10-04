@@ -56,24 +56,36 @@ const Header = () => {
         <div id="hamruger-menu" onClick={() => setShowMenuStatus(!showMenu)}>
           <img src="/images/header/hamburger-menu.svg" />
         </div>
-        <div id="mobile-menu" className={showMenu ? "show" : ""}>
-          <div id="closeIcon" onClick={() => setShowMenuStatus(!showMenu)}>
-            <img src="/images/header/closeIcon.svg" />
-          </div>
+        <div
+          id="mobile-menu-wrapper"
+          className={showMenu ? "show" : ""}
+          onClick={(e) => {
+            // hide mobile menu on wrapper click
+            const clickedElement = e.target as HTMLElement;
+            if (clickedElement.id === "mobile-menu-wrapper") {
+              setShowMenuStatus(false);
+            }
+          }}
+        >
+          <div id="mobile-menu">
+            <div id="closeIcon" onClick={() => setShowMenuStatus(!showMenu)}>
+              <img src="/images/header/closeIcon.svg" />
+            </div>
 
-          <div id="mobile-links">
-            {mobileHeaderLinks.map((link, idx) => (
-              <div className="link-wrapper" key={idx}>
-                <img src={link.iconUrl} />
-                <a
-                  onClick={() => setShowMenuStatus(!showMenu)}
-                  key={idx}
-                  href={link.link}
-                >
-                  {link.text}
-                </a>
-              </div>
-            ))}
+            <div id="mobile-links">
+              {mobileHeaderLinks.map((link, idx) => (
+                <div className="link-wrapper" key={idx}>
+                  <img src={link.iconUrl} />
+                  <a
+                    onClick={() => setShowMenuStatus(!showMenu)}
+                    key={idx}
+                    href={link.link}
+                  >
+                    {link.text}
+                  </a>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
